@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <plugin type="com.rosegun.plugin.MysqlLimitPlugin"></plugin>
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/taotao" driverClass="com.mysql.jdbc.Driver" password="95594Bos" userId="root" />
+    <javaModelGenerator targetPackage="com.taotao.pojo" targetProject="generateMyBatis/src" />
+    <sqlMapGenerator targetPackage="com.taotao.mapper" targetProject="generateMyBatis/src" />
+    <javaClientGenerator targetPackage="com.taotao.mapper" targetProject="generateMyBatis/src" type="XMLMAPPER" />
+    <table schema="taotao" tableName="tb_content"></table>
+    <table schema="taotao" tableName="tb_content_category"></table>
+    <table schema="taotao" tableName="tb_item"></table>
+    <table schema="taotao" tableName="tb_item_cat"></table>
+    <table schema="taotao" tableName="tb_item_desc"></table>
+    <table schema="taotao" tableName="tb_item_param"></table>
+    <table schema="taotao" tableName="tb_item_param_item"></table>
+    <table schema="taotao" tableName="tb_order"></table>
+    <table schema="taotao" tableName="tb_order_item"></table>    
+    <table schema="taotao" tableName="tb_order_shipping"></table>
+    <table schema="taotao" tableName="tb_user"></table>    
+  </context>
+</generatorConfiguration>
